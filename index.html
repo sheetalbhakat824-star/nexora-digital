@@ -3,161 +3,342 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="NEXORA DIGITAL - Digital Marketing, Social Media Management, SEO and Website Development in Jamshedpur.">
-<title>NEXORA DIGITAL | Digital Marketing Agency</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXORA DIGITAL | Grow Beyond Limits</title>
+<meta name="description" content="NEXORA DIGITAL - Website development, branding, digital marketing and creative services.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#3155f5;--purple:#873bea;--dark:#11152e;--muted:#777b91;--bg:#f6f7ff}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;color:#202b3c;background:#fff}
+body{font-family:Inter,Arial,sans-serif;color:#20233c;background:white}
 a{text-decoration:none;color:inherit}
-header{height:75px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:white;position:sticky;top:0;z-index:10;box-shadow:0 2px 15px #0000000c}
-.logo{font-size:25px;font-weight:900;color:#5544bc}
-.logo span{color:#202b3c}
-nav{display:flex;gap:25px;font-size:14px;font-weight:600}
-nav a:hover{color:#6654cc}
-.menu{display:none;border:0;background:none;font-size:26px}
-.hero{padding:100px 8%;text-align:center;background:linear-gradient(135deg,#f2f0ff,#fff 60%,#edf5ff)}
-.hero small{color:#6654cc;font-weight:bold;letter-spacing:2px}
-.hero h1{font-size:clamp(36px,7vw,65px);margin:22px 0;color:#17243b;line-height:1.12}
-.hero h1 span{color:#6855d4}
-.hero p{max-width:650px;margin:0 auto 28px;color:#657187;font-size:17px;line-height:1.8}
-.btn{display:inline-block;background:#6352c8;color:white;padding:15px 25px;border-radius:7px;margin:5px;font-weight:bold}
-.btn:hover{background:#4637a5}
-.btn2{background:white;color:#5544bc;border:1px solid #6352c8}
-section{padding:75px 8%}
-.heading{text-align:center;margin-bottom:40px}
-.heading h2{font-size:34px;color:#1c2940;margin-bottom:12px}
-.heading p{color:#718096}
-.about{background:#f7f8fc;text-align:center}
-.about p{max-width:800px;margin:auto;color:#657187;line-height:1.9}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{padding:30px 24px;border:1px solid #e7e9f1;border-radius:12px;box-shadow:0 5px 20px #16213a08;transition:.3s}
-.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px #16213a12}
-.card .icon{font-size:38px}
-.card h3{margin:15px 0 10px;color:#283650}
-.card p{color:#758095;line-height:1.7;font-size:14px}
-.areas{background:#f7f8fc;text-align:center}
-.area{display:inline-block;background:white;padding:18px 35px;border-radius:9px;border:1px solid #e7e9f1;color:#5544bc;font-weight:bold}
-.hours{max-width:650px;margin:auto}
-.hours p{padding:15px;border-bottom:1px solid #e8eaf0;display:flex;justify-content:space-between}
-.contact{background:#17243b;color:white;text-align:center}
-.contact .heading h2{color:white}
-.contact .heading p{color:#c5cee0}
-.contact-box{max-width:650px;margin:auto}
-.contact-box p{margin:15px 0;color:#d0d7e7}
-.contact .btn{background:#7665e3}
-footer{background:#101a2b;color:#c1c9da;text-align:center;padding:30px 15px}
-footer strong{color:white}
-.float{position:fixed;bottom:20px;right:18px;background:#16a34a;color:white;padding:15px;border-radius:50px;font-weight:bold;z-index:15;box-shadow:0 4px 15px #0003}
-@media(max-width:650px){
-header{padding:0 5%}
-.menu{display:block}
-nav{display:none;position:absolute;top:75px;left:0;width:100%;background:white;padding:20px;flex-direction:column;box-shadow:0 5px 10px #0001}
-nav.open{display:flex}
-.hero{padding:75px 6%}
-section{padding:60px 6%}
-.heading h2{font-size:28px}
+button{font:inherit;cursor:pointer}
+.top{background:#10142c;color:white;text-align:center;padding:9px;font-size:12px}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(15px);border-bottom:1px solid #eee}
+.nav{max-width:1150px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:900;color:var(--blue);letter-spacing:-1px}
+.logo span{color:var(--dark)}
+.links{display:flex;align-items:center;gap:23px;font-size:13px;font-weight:700}
+.links a:hover{color:var(--blue)}
+.menu{display:none;background:none;border:0;font-size:25px}
+.btn{display:inline-block;border:0;border-radius:12px;background:var(--blue);color:white;padding:13px 20px;font-weight:800;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #3155f544}
+.btn.white{background:white;color:#3035a0}
+.btn.dark{background:var(--dark)}
+.hero{background:linear-gradient(120deg,#edf0ff,#f8efff 55%,#e8faff);overflow:hidden}
+.hero-inner{max-width:1150px;margin:auto;padding:85px 20px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.pill{display:inline-block;background:white;color:var(--blue);padding:9px 14px;border-radius:30px;font-size:11px;font-weight:900;margin-bottom:20px}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.06;letter-spacing:-3px;color:#12152e}
+.gradient{background:linear-gradient(90deg,#3155ef,#a13de9);background-clip:text;color:transparent}
+.hero p{color:#696d85;line-height:1.8;margin:22px 0;max-width:540px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.visual{height:350px;display:grid;place-items:center;position:relative}
+.orbit{width:290px;height:290px;border-radius:38% 62% 60% 40%;background:linear-gradient(140deg,#3155ef,#a53dec);display:grid;place-items:center;box-shadow:0 35px 80px #563be855;animation:float 5s infinite ease-in-out}
+.orbit b{font-size:100px;color:white;letter-spacing:-12px}
+.float{position:absolute;background:white;padding:15px 18px;border-radius:15px;box-shadow:0 10px 35px #20244a20;font-size:12px;font-weight:800}
+.f1{top:15px;right:0}.f2{bottom:15px;left:0}
+@keyframes float{50%{transform:translateY(-13px) rotate(5deg)}}
+.stats{max-width:1000px;margin:-25px auto 0;position:relative;background:white;border-radius:18px;box-shadow:0 12px 40px #1d276018;display:grid;grid-template-columns:repeat(3,1fr);padding:23px}
+.stat{text-align:center;border-right:1px solid #eee}
+.stat:last-child{border:0}
+.stat b{display:block;color:var(--blue);font-size:24px}
+.stat small{color:var(--muted)}
+section{padding:75px 20px}
+.container{max-width:1100px;margin:auto}
+.center{text-align:center}
+.eyebrow{color:var(--blue);font-weight:900;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.heading{font-size:clamp(29px,4vw,43px);letter-spacing:-1.5px;margin:12px 0}
+.sub{max-width:620px;margin:auto;color:var(--muted);line-height:1.8;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.card{background:white;border:1px solid #ececf5;border-radius:20px;padding:25px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 15px 40px #26398d14}
+.icon{height:52px;width:52px;border-radius:15px;background:#eef0ff;display:grid;place-items:center;font-size:25px;margin-bottom:17px}
+.card h3{font-size:17px;margin-bottom:10px}
+.card p{font-size:13px;line-height:1.7;color:var(--muted)}
+.price{font-size:22px;font-weight:900;color:var(--blue);margin:17px 0}
+.offer{margin-top:35px;border-radius:22px;padding:35px;background:linear-gradient(120deg,#18204b,#6333c8);color:white;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.offer h2{font-size:27px;margin:12px 0}
+.offer p{font-size:13px;color:#dddafa;line-height:1.7}
+.tag{display:inline-block;background:#eeeeff;color:#3c43c2;border-radius:30px;padding:7px 11px;font-size:10px;font-weight:900}
+.offer .tag{background:#ffffff24;color:white}
+.pricing{background:var(--bg)}
+.package{background:white;border:1px solid #e7e8f2;padding:27px;border-radius:20px}
+.package.featured{border:2px solid var(--blue);box-shadow:0 15px 35px #3155ef18}
+.package h3{margin:16px 0 5px}
+.amount{font-size:32px;font-weight:900;margin:15px 0}
+.amount small{font-size:12px;color:#888}
+.package ul{list-style:none;margin:20px 0}
+.package li{font-size:13px;padding:9px 0;border-bottom:1px solid #eee;color:#646880}
+.package li:before{content:"✓ ";color:var(--blue);font-weight:900}
+.package .btn{width:100%;text-align:center}
+.adbox{max-width:1100px;margin:30px auto;padding:24px;border:1px dashed #b8bdd9;border-radius:14px;background:#f9faff;text-align:center;color:#9296aa;font-size:12px}
+.gallery-tools{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:25px 0}
+.gallery-tools button{border:1px solid #ddd;background:white;padding:10px 16px;border-radius:30px;font-size:12px;font-weight:800}
+.gallery-tools button.active{background:var(--blue);color:white}
+.gallery-item{overflow:hidden;position:relative;border-radius:17px;background:#eee;cursor:pointer}
+.gallery-item img{display:block;width:100%;height:220px;object-fit:cover;transition:.4s}
+.gallery-item:hover img{transform:scale(1.06)}
+.gallery-item span{position:absolute;bottom:0;left:0;right:0;padding:16px;color:white;font-size:13px;font-weight:800;background:linear-gradient(transparent,#10132add)}
+.video-box{max-width:850px;margin:30px auto;background:#11152e;border-radius:20px;overflow:hidden}
+.video-box iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.ai-panel{margin-top:35px;padding:30px;border-radius:22px;background:linear-gradient(130deg,#151a39,#5032a8);color:white}
+.ai-panel p{color:#dedaf9;line-height:1.7;font-size:13px}
+.ai-panel textarea{width:100%;min-height:100px;padding:14px;border:0;border-radius:12px;margin:15px 0;font:inherit}
+.ai-panel .btn{background:white;color:#34338f}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.step{background:#f7f7ff;padding:25px;border-radius:17px}
+.step b{font-size:27px;color:var(--blue)}
+.step h3{margin:10px 0}
+.step p{font-size:13px;color:var(--muted);line-height:1.7}
+.contact{background:#11152f;color:white}
+.contact .heading{color:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:35px}
+.contact-info p{color:#c4c7dc;line-height:1.9;margin:14px 0;font-size:14px}
+.form{background:white;color:#20233c;padding:25px;border-radius:20px}
+.form label{font-size:12px;font-weight:800}
+.form input,.form select,.form textarea{width:100%;padding:13px;border:1px solid #e1e3ed;border-radius:10px;margin:7px 0 14px;font:inherit;font-size:13px}
+.form button{width:100%}
+.faq{max-width:800px;margin:30px auto}
+.faq details{border-bottom:1px solid #eee;padding:17px 5px}
+.faq summary{font-weight:800;cursor:pointer;font-size:14px}
+.faq p{font-size:13px;color:var(--muted);padding-top:12px;line-height:1.7}
+footer{background:#0b0e21;color:#b9bdd5;text-align:center;padding:25px;font-size:12px}
+.wa{position:fixed;bottom:18px;right:18px;z-index:25;background:#16b85b;color:white;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;font-size:26px;box-shadow:0 8px 25px #16b85b55}
+.lightbox{display:none;position:fixed;inset:0;background:#080a19ed;z-index:50;align-items:center;justify-content:center;padding:20px}
+.lightbox img{max-width:95%;max-height:85vh;border-radius:15px}
+.lightbox button{position:absolute;right:20px;top:20px;padding:12px;border:0;border-radius:10px}
+@media(max-width:760px){
+ .links{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:22px;flex-direction:column}
+ .links.open{display:flex}.menu{display:block}
+ .hero-inner{grid-template-columns:1fr;text-align:center;padding:55px 20px}
+ .hero p{margin:20px auto}.hero-actions{justify-content:center}
+ .visual{height:280px}.orbit{width:235px;height:235px}
+ .orbit b{font-size:80px}.stats{margin:0 12px;padding:15px 4px}
+ .stat b{font-size:19px}.stat small{font-size:10px}
+ .grid,.steps{grid-template-columns:1fr}
+ .offer{display:block;padding:25px}.offer .btn{margin-top:18px}
+ .contact-grid{grid-template-columns:1fr}
+ section{padding:55px 17px}
+ .gallery-item img{height:155px}
 }
 </style>
 </head>
-
 <body>
+
+<div class="top">🚀 NEXORA DIGITAL — Special Launch Offers | Grow Beyond Limits</div>
+
 <header>
-<a class="logo" href="#home">NEXORA <span>DIGITAL</span></a>
-<button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-<nav id="nav">
+<nav class="nav">
+<a href="#" class="logo">NEXORA<span> DIGITAL.</span></a>
+<button class="menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<div class="links">
 <a href="#home">Home</a>
-<a href="#about">About Us</a>
 <a href="#services">Services</a>
-<a href="#location">Location</a>
-<a href="#contact">Contact Us</a>
+<a href="#gallery">Gallery</a>
+<a href="#packages">Packages</a>
+<a href="#contact" class="btn">Get Started →</a>
+</div>
 </nav>
 </header>
 
-<section class="hero" id="home">
-<small>WELCOME TO NEXORA DIGITAL</small>
-<h1>Grow Your Business<br><span>Digitally With Us</span></h1>
-<p>We help businesses grow online with professional digital marketing, social media management, creative branding and website solutions.</p>
-<a class="btn" href="#contact">Contact Us →</a>
-<a class="btn btn2" href="#services">Our Services</a>
-</section>
-
-<section class="about" id="about">
-<div class="heading">
-<h2>About Us</h2>
-<p>Your trusted digital growth partner</p>
+<main>
+<div class="hero" id="home">
+<div class="hero-inner">
+<div>
+<span class="pill">✦ YOUR DIGITAL GROWTH PARTNER</span>
+<h1>Build Your Brand.<br><span class="gradient">Grow Beyond Limits.</span></h1>
+<p>Creative websites, digital marketing, AI-inspired designs and professional branding. Everything your business needs to grow online.</p>
+<div class="hero-actions">
+<a href="#services" class="btn">Explore Services →</a>
+<a href="#contact" class="btn dark">Contact Us</a>
 </div>
-<p>NEXORA DIGITAL is focused on helping businesses build a strong online presence. We provide creative digital marketing solutions, social media management, website development and branding services to help your business reach more customers.</p>
-</section>
+</div>
+<div class="visual">
+<div class="orbit"><b>N.</b></div>
+<div class="float f1">✨ Creative Studio</div>
+<div class="float f2">📈 Digital Growth</div>
+</div>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>24/7</b><small>Enquiry Support</small></div>
+<div class="stat"><b>100%</b><small>Customer Focus</small></div>
+<div class="stat"><b>∞</b><small>Creative Ideas</small></div>
+</div>
+
+<div class="adbox">ADVERTISEMENT SPACE — AdSense placement after approval</div>
 
 <section id="services">
-<div class="heading">
-<h2>Our Services</h2>
-<p>Professional solutions for your business</p>
+<div class="container">
+<div class="center">
+<div class="eyebrow">Our Services</div>
+<h2 class="heading">Everything Your Brand Needs</h2>
+<p class="sub">Professional digital services to make your business stand out.</p>
 </div>
-<div class="services">
-<div class="card"><div class="icon">📱</div><h3>Social Media Management</h3><p>Professional social media account management and content strategy.</p></div>
-<div class="card"><div class="icon">📸</div><h3>Instagram Marketing</h3><p>Creative Instagram marketing and audience engagement strategies.</p></div>
-<div class="card"><div class="icon">📈</div><h3>Digital Marketing</h3><p>Digital campaigns to improve your business visibility.</p></div>
-<div class="card"><div class="icon">🌐</div><h3>Website Development</h3><p>Modern, mobile-friendly websites for your business.</p></div>
-<div class="card"><div class="icon">🔍</div><h3>SEO Services</h3><p>Improve your website visibility on search engines.</p></div>
-<div class="card"><div class="icon">🎨</div><h3>Graphic Design</h3><p>Creative designs, banners and brand identity.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🌐</div><h3>Website Development</h3><p>Modern business websites, landing pages and responsive designs.</p><div class="price">From ₹999</div><a class="btn" href="#contact">Book Now</a></div>
+<div class="card"><div class="icon">🎨</div><h3>Logo & Graphic Design</h3><p>Logos, posters, banners and professional brand graphics.</p><div class="price">From ₹299</div><a class="btn" href="#contact">Book Now</a></div>
+<div class="card"><div class="icon">📱</div><h3>Social Media Design</h3><p>Social media creatives, profile branding and post designs.</p><div class="price">From ₹499</div><a class="btn" href="#contact">Book Now</a></div>
+<div class="card"><div class="icon">📢</div><h3>Digital Marketing</h3><p>Digital campaign planning and online promotion support.</p><div class="price">From ₹799</div><a class="btn" href="#contact">Book Now</a></div>
+<div class="card"><div class="icon">🤖</div><h3>AI Creative Services</h3><p>AI-assisted creative concepts, image prompts and visual ideas.</p><div class="price">From ₹499</div><a class="btn" href="#contact">Book Now</a></div>
+<div class="card"><div class="icon">⚡</div><h3>Website Maintenance</h3><p>Content updates, technical support and website improvements.</p><div class="price">From ₹499</div><a class="btn" href="#contact">Book Now</a></div>
+</div>
+<div class="offer">
+<div><span class="tag">SPECIAL LAUNCH OFFER</span><h2>Get up to 20% OFF</h2><p>Ask our team about current discounts and service packages.</p></div>
+<a href="#contact" class="btn white">Claim Offer →</a>
+</div>
 </div>
 </section>
 
-<section class="areas" id="location">
-<div class="heading">
-<h2>Areas Covered</h2>
-<p>Our business location</p>
+<section class="pricing" id="packages">
+<div class="container">
+<div class="center"><div class="eyebrow">Our Packages</div><h2 class="heading">Choose Your Growth Plan</h2><p class="sub">Sample prices. Final quotation depends on your requirements.</p></div>
+<div class="grid">
+<div class="package"><span class="tag">STARTER</span><h3>Basic Package</h3><div class="amount">₹999</div><ul><li>Basic website design</li><li>Mobile responsive</li><li>Contact section</li><li>Basic support</li></ul><a class="btn" href="#contact">Choose Plan</a></div>
+<div class="package featured"><span class="tag">POPULAR</span><h3>Professional</h3><div class="amount">₹2,499</div><ul><li>Professional website</li><li>Premium design</li><li>Multiple sections</li><li>WhatsApp integration</li><li>Priority support</li></ul><a class="btn" href="#contact">Choose Plan</a></div>
+<div class="package"><span class="tag">ADVANCED</span><h3>Business Pro</h3><div class="amount">₹4,999</div><ul><li>Advanced website</li><li>Custom sections</li><li>Booking interface</li><li>Business branding</li><li>Extended support</li></ul><a class="btn" href="#contact">Choose Plan</a></div>
 </div>
-<div class="area">📍 Jamshedpur, Jharkhand, India</div>
-<p style="margin-top:22px">
-<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Jamshedpur+Jharkhand+India" target="_blank">Get Directions →</a>
-</p>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<div class="center"><div class="eyebrow">Creative Showcase</div><h2 class="heading">AI Photo & Design Gallery</h2><p class="sub">Explore sample creative concepts and design inspiration.</p></div>
+<div class="gallery-tools">
+<button class="active" onclick="filterGallery('all',this)">All</button>
+<button onclick="filterGallery('brand',this)">Branding</button>
+<button onclick="filterGallery('social',this)">Social Media</button>
+<button onclick="filterGallery('art',this)">AI Art</button>
+</div>
+<div class="grid">
+<div class="gallery-item" data-category="brand" onclick="openPhoto(this)"><img src="https://images.unsplash.com/photo-1634942536790-2533b8a7e78a?w=800" alt="Brand concept"><span>Brand Identity</span></div>
+<div class="gallery-item" data-category="social" onclick="openPhoto(this)"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800" alt="Social media concept"><span>Social Media</span></div>
+<div class="gallery-item" data-category="art" onclick="openPhoto(this)"><img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="Digital abstract art"><span>Digital Art</span></div>
+<div class="gallery-item" data-category="brand" onclick="openPhoto(this)"><img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800" alt="Graphic design"><span>Graphic Design</span></div>
+<div class="gallery-item" data-category="art" onclick="openPhoto(this)"><img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=800" alt="Creative art"><span>Creative Art</span></div>
+<div class="gallery-item" data-category="social" onclick="openPhoto(this)"><img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800" alt="Social design"><span>Social Campaign</span></div>
+</div>
+
+<div class="ai-panel">
+<div class="eyebrow" style="color:#d6c7ff">AI PROMPT STUDIO</div>
+<h2 style="margin:12px 0">Create Your Design Idea</h2>
+<p>Describe your idea and prepare a professional prompt for an AI image generator.</p>
+<textarea id="idea" placeholder="Example: Luxury blue and gold digital agency logo..."></textarea>
+<button class="btn" onclick="generatePrompt()">Create Prompt →</button>
+<p id="result" style="margin-top:15px;overflow-wrap:anywhere"></p>
+<button class="btn" style="margin-top:12px" onclick="copyPrompt()">Copy Prompt</button>
+</div>
+</div>
+</section>
+
+<section id="videos">
+<div class="container center">
+<div class="eyebrow">Video Showcase</div>
+<h2 class="heading">Demo Video Studio</h2>
+<p class="sub">Showcase your work, tutorials and project demonstrations here.</p>
+<div class="video-box">
+<iframe src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4" title="Demo video sample" allowfullscreen loading="lazy"></iframe>
+</div>
+<p class="sub">Replace this sample video with your own YouTube demo video.</p>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="center"><div class="eyebrow">Our Process</div><h2 class="heading">From Idea to Impact</h2></div>
+<div class="steps">
+<div class="step"><b>01</b><h3>Tell Us Your Idea</h3><p>Share your project requirements and goals.</p></div>
+<div class="step"><b>02</b><h3>Plan & Create</h3><p>Discuss scope, price and delivery timeline.</p></div>
+<div class="step"><b>03</b><h3>Launch & Grow</h3><p>Review your completed work and move forward.</p></div>
+</div>
+</div>
 </section>
 
 <section>
-<div class="heading">
-<h2>Contact Information</h2>
-<p>We are ready to discuss your business needs</p>
+<div class="container center">
+<div class="eyebrow">Frequently Asked Questions</div>
+<h2 class="heading">Have Questions?</h2>
+<div class="faq">
+<details><summary>How can I book a service?</summary><p>Use the enquiry form below or contact us through WhatsApp.</p></details>
+<details><summary>Are these prices final?</summary><p>These are sample starting prices. We will confirm your quotation before work begins.</p></details>
+<details><summary>Can I request a custom package?</summary><p>Yes. Send your project details and request a custom quotation.</p></details>
+<details><summary>How does payment work?</summary><p>Payment instructions will be shared after your service and quotation are confirmed.</p></details>
 </div>
-<div class="hours">
-<p><strong>Phone</strong><a href="tel:+917091113838">+91 7091113838</a></p>
-<p><strong>Email</strong><a href="mailto:sheetalbhakat824@gmail.com">Send Email</a></p>
-<p><strong>Location</strong><span>Jamshedpur, India</span></p>
 </div>
 </section>
 
 <section class="contact" id="contact">
-<div class="heading">
-<h2>Let's Grow Together</h2>
-<p>Contact NEXORA DIGITAL for professional digital solutions.</p>
+<div class="container">
+<div class="center"><div class="eyebrow">Let's Talk</div><h2 class="heading">Start Your Project Today</h2><p class="sub">Send your requirements to our WhatsApp team.</p></div>
+<div class="contact-grid">
+<div class="contact-info">
+<h2>Let's build something great.</h2>
+<p>📞 WhatsApp: <a href="https://wa.me/917091113838">7091113838</a></p>
+<p>✉ Email: <a href="mailto:sheetalbhakat824@gmail.com">sheetalbhakat824@gmail.com</a></p>
+<p>📍 Jamshedpur, Jharkhand, India</p>
+<p>Grow Beyond Limits.</p>
 </div>
-<div class="contact-box">
-<p>📞 +91 7091113838</p>
-<p>✉ sheetalbhakat824@gmail.com</p>
-<a class="btn" href="https://wa.me/917091113838" target="_blank">Chat on WhatsApp →</a>
-<a class="btn" href="mailto:sheetalbhakat824@gmail.com">Send Email →</a>
+<form class="form" onsubmit="sendBooking(event)">
+<label>Your Name</label><input id="customer" required placeholder="Your name">
+<label>Mobile Number</label><input id="mobile" required type="tel" placeholder="Your mobile number">
+<label>Select Service</label>
+<select id="service">
+<option>Website Development</option><option>Logo & Graphic Design</option><option>Social Media Design</option><option>Digital Marketing</option><option>AI Creative Services</option><option>Website Maintenance</option>
+</select>
+<label>Project Details</label><textarea id="details" rows="3" placeholder="Tell us about your project"></textarea>
+<button class="btn" type="submit">Send Enquiry on WhatsApp →</button>
+</form>
+</div>
 </div>
 </section>
+</main>
 
-<footer>
-<p><strong>NEXORA DIGITAL</strong></p>
-<p>Digital Marketing & Business Growth Solutions</p>
-<p>© <span id="year"></span> NEXORA DIGITAL. All Rights Reserved.</p>
-</footer>
+<div class="adbox">Advertisement area — add your approved Google AdSense code here.</div>
 
-<a class="float" href="https://wa.me/917091113838" target="_blank">WhatsApp</a>
+<footer>© 2026 NEXORA DIGITAL. All Rights Reserved. | Grow Beyond Limits.</footer>
+<a class="wa" href="https://wa.me/917091113838" aria-label="WhatsApp">☏</a>
+
+<div class="lightbox" id="lightbox" onclick="closePhoto()">
+<button onclick="closePhoto()">✕ Close</button>
+<img id="largePhoto" src="" alt="Gallery preview">
+</div>
 
 <script>
-document.querySelectorAll('nav a').forEach(a=>{
-a.addEventListener('click',()=>{
-document.getElementById('nav').classList.remove('open');
-});
-});
-document.getElementById('year').textContent=new Date().getFullYear();
+function filterGallery(category,button){
+ document.querySelectorAll('.gallery-tools button').forEach(b=>b.classList.remove('active'));
+ button.classList.add('active');
+ document.querySelectorAll('.gallery-item').forEach(item=>{
+  item.style.display=category==='all'||item.dataset.category===category?'block':'none';
+ });
+}
+function openPhoto(item){
+ document.getElementById('largePhoto').src=item.querySelector('img').src;
+ document.getElementById('lightbox').style.display='flex';
+}
+function closePhoto(){document.getElementById('lightbox').style.display='none'}
+function generatePrompt(){
+ const idea=document.getElementById('idea').value.trim();
+ if(!idea){alert('Please enter your idea');return}
+ document.getElementById('result').textContent='Professional AI image prompt: '+idea+'. Premium composition, beautiful lighting, detailed visual elements, balanced layout, professional color grading, high-resolution creative design.';
+}
+function copyPrompt(){
+ const value=document.getElementById('result').textContent;
+ if(!value){alert('Create a prompt first');return}
+ if(navigator.clipboard&&window.isSecureContext){
+  navigator.clipboard.writeText(value).then(()=>alert('Prompt copied!')).catch(()=>alert(value));
+ }else{alert(value)}
+}
+function sendBooking(e){
+ e.preventDefault();
+ const name=document.getElementById('customer').value.trim();
+ const mobile=document.getElementById('mobile').value.trim();
+ const service=document.getElementById('service').value;
+ const details=document.getElementById('details').value.trim();
+ const msg=`Hello NEXORA DIGITAL!\nName: ${name}\nMobile: ${mobile}\nService: ${service}\nDetails: ${details}`;
+ window.open('https://wa.me/917091113838?text='+encodeURIComponent(msg),'_blank');
+}
 </script>
 </body>
 </html>
